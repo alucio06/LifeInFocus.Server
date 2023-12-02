@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeInFocus.API", "src\LifeInFocus.API\LifeInFocus.API.csproj", "{3DDF935D-CC45-4E85-8555-AF88DFB3FC7A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeInFocus.API", "src\LifeInFocus.API\LifeInFocus.API.csproj", "{3DDF935D-CC45-4E85-8555-AF88DFB3FC7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeInFocus.Business", "src\LifeInFocus.Business\LifeInFocus.Business.csproj", "{0D6CF695-F8FA-451A-8226-AFA1EE3FA8EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeInFocus.Business", "src\LifeInFocus.Business\LifeInFocus.Business.csproj", "{0D6CF695-F8FA-451A-8226-AFA1EE3FA8EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LifeInFocus.Data", "LifeInFocus.Data\LifeInFocus.Data.csproj", "{78C2A906-9D2D-4711-BAE6-5F0F15424E0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LifeInFocus.Data", "src\LifeInFocus.Data\LifeInFocus.Data.csproj", "{03CE3F5F-8D6C-47EA-B97A-DF83A2C8C492}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{0D6CF695-F8FA-451A-8226-AFA1EE3FA8EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D6CF695-F8FA-451A-8226-AFA1EE3FA8EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D6CF695-F8FA-451A-8226-AFA1EE3FA8EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{78C2A906-9D2D-4711-BAE6-5F0F15424E0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{78C2A906-9D2D-4711-BAE6-5F0F15424E0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{78C2A906-9D2D-4711-BAE6-5F0F15424E0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{78C2A906-9D2D-4711-BAE6-5F0F15424E0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03CE3F5F-8D6C-47EA-B97A-DF83A2C8C492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03CE3F5F-8D6C-47EA-B97A-DF83A2C8C492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03CE3F5F-8D6C-47EA-B97A-DF83A2C8C492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03CE3F5F-8D6C-47EA-B97A-DF83A2C8C492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

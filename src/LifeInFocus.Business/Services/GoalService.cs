@@ -8,7 +8,7 @@ namespace LifeInFocus.Business.Services
     {
         private readonly IGoalRepository _goalRepository;
 
-        public GoalService(IGoalRepository goalRepository, INotificador notificador) : base(notificador)
+        public GoalService(IGoalRepository goalRepository, INotifier notificador) : base(notificador)
         {
             _goalRepository = goalRepository;
         }

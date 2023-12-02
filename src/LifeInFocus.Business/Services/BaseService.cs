@@ -8,37 +8,37 @@ namespace LifeInFocus.Business.Services
 {
     public class BaseService
     {
-        public readonly INotificador _notificador;
+        public readonly INotifier _notifier;
 
-        protected BaseService(INotificador notificador)
+        protected BaseService(INotifier notifier)
         {
-            _notificador = notificador;
+            _notifier = notifier;
         }
 
-        protected bool ExecutarValidacao<TV, TE>(TV validacao, TE entidade)
+        protected bool ExecutarValidacao<TV, TE>(TV validation, TE entity)
             where TV : AbstractValidator<TE>
             where TE : Entity
         {
-            var validator = validacao.Validate(entidade);
+            var validator = validation.Validate(entity);
 
             if (validator.IsValid) return true;
 
-            Notificar(validator);
+            Notify(validator);
 
             return false;
         }
 
-        protected void Notificar(ValidationResult validationResult)
+        protected void Notify(ValidationResult validationResult)
         {
-            foreach (var erro in validationResult.Errors)
+            foreach (var error in validationResult.Errors)
             {
-                Notificar(erro.ErrorMessage);
+                Notify(error.ErrorMessage);
             }
         }
 
-        protected void Notificar(string mensagem)
+        protected void Notify(string message)
         {
-            _notificador.Handle(new Notificacao(mensagem));
+            _notifier.Handle(new Notification(message));
         }
     }
 }

@@ -28,7 +28,7 @@ namespace LifeInFocus.Data.Mappings
             builder.Property(x => x.Reward)
                 .IsRequired(false)
                 .HasColumnType("varchar(200)")
-                .HasColumnName("Name");
+                .HasColumnName("Reward");
 
             builder.Property(x => x.Priority)
                 .IsRequired()
@@ -42,7 +42,7 @@ namespace LifeInFocus.Data.Mappings
 
             builder.Property(x => x.IsDeleted)
               .IsRequired()
-              .HasColumnType("bool")
+              .HasColumnType("bit")
               .HasColumnName("IsDeleted");
 
         }

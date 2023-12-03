@@ -4,7 +4,7 @@
     {
         public string Name { get; set; } = string.Empty;
         public DateTime? Deadline { get; set; }
-        public int CategoryId { get; set; }
+        public Guid CategoryId { get; set; }
         public string? Motivation { get; set; }
         public string? Reward { get; set; }
         public int Priority { get; set; }

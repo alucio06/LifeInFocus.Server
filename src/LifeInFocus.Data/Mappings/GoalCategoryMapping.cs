@@ -22,7 +22,7 @@ namespace LifeInFocus.Data.Mappings
 
             builder.Property(x => x.IsDeleted)
               .IsRequired()
-              .HasColumnType("bool")
+              .HasColumnType("bit")
               .HasColumnName("IsDeleted");
 
             // 1 : N => GoalCategory : Goals

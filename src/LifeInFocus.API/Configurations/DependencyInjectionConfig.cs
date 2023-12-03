@@ -2,6 +2,7 @@
 using LifeInFocus.Business.Interfaces.Repositories;
 using LifeInFocus.Business.Interfaces.Services;
 using LifeInFocus.Business.Notificacoes;
+using LifeInFocus.Business.Services;
 using LifeInFocus.Data.Context;
 using LifeInFocus.Data.Repositories;
 
@@ -16,7 +17,7 @@ namespace LifeInFocus.API.Configurations
             services.AddScoped<IGoalRepository, GoalRepository>();
 
             // Business
-            services.AddScoped<IGoalService, IGoalService>();
+            services.AddScoped<IGoalService, GoalService>();
             services.AddScoped<INotifier, Notifier>();
 
             return services;

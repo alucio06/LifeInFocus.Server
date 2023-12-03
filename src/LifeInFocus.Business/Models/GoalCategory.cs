@@ -2,6 +2,9 @@
 {
     public class GoalCategory : Entity
     {
-        public string Nome { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
+        public DateTime RegistrationDate { get; set; }
+        public bool IsDeleted { get; set; }
+        public IEnumerable<Goal> Goals { get; set; }
     }
 }

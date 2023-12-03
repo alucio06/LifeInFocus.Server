@@ -2,11 +2,16 @@
 {
     public class Goal : Entity
     {
-        public string Nome { get; set; } = string.Empty;
-        public DateTime? Prazo { get; set; }
-        public string? Motivacao { get; set; }
-        public string? Recompensa { get; set; }
-        public GoalCategory Categoria { get; set; } = new GoalCategory();
-        public int Prioridade { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public DateTime? Deadline { get; set; }
+        public int CategoryId { get; set; }
+        public string? Motivation { get; set; }
+        public string? Reward { get; set; }
+        public int Priority { get; set; }
+        public DateTime RegistrationDate { get; set; }
+        public bool IsDeleted { get; set; }
+
+        // EF Relations
+        public GoalCategory Category { get; set; } = new GoalCategory();
     }
 }

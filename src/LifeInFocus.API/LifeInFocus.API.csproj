@@ -12,8 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LifeInFocus.Data\LifeInFocus.Data.csproj" />
     <ProjectReference Include="..\LifeInFocus.Business\LifeInFocus.Business.csproj" />
+    <ProjectReference Include="..\LifeInFocus.Data\LifeInFocus.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
 
 </Project>
